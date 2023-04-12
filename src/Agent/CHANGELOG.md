@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.10.0](https://github.com/h0x0er/newrelic-dotnet-agent/compare/v10.9.1...v10.10.0) (2023-04-12)
+
+
+### New Features
+
+* Add commented out workflow to get release checksums ([68a7ee7](https://github.com/h0x0er/newrelic-dotnet-agent/commit/68a7ee76f83fcf024dd8ec1ff7d07a38a7f113e9))
+* add new settings to report linux distro name and version ([#1439](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1439)) ([21caed7](https://github.com/h0x0er/newrelic-dotnet-agent/commit/21caed7f2e6ffe423365f817ff96a4e41fc1218b))
+* add Supportability/Logging/Forwarding/Dropped metric ([#1470](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1470)) ([89dd33a](https://github.com/h0x0er/newrelic-dotnet-agent/commit/89dd33a6febc129c5051136226243845c606ca70))
+* Create workflow to get release checksums ([#1475](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1475)) ([1b0dd92](https://github.com/h0x0er/newrelic-dotnet-agent/commit/1b0dd9251647aa8a51e2417f5413d14d52d3d60b))
+
+
+### Fixes
+
+* Allow StackExchange.Redis v2+ profiling to start outside of a transaction. ([#1501](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1501)) ([#1504](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1504)) ([925d016](https://github.com/h0x0er/newrelic-dotnet-agent/commit/925d016c145b50b75a3b3401de303f5fa9a64609))
+* allow the agent to accept multiple versions of legacy NR distributed tracing headers ([#1489](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1489)) ([23ee241](https://github.com/h0x0er/newrelic-dotnet-agent/commit/23ee24141ad44afa39e3f35f93aa2ae7570acb72))
+* deploy/linux/Dockerfile to reduce vulnerabilities ([#1001](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1001)) ([ba7d759](https://github.com/h0x0er/newrelic-dotnet-agent/commit/ba7d759d3593aaf6c8ffddfc5824b667b439937f))
+* deploy/linux/Dockerfile to reduce vulnerabilities ([#1364](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1364)) ([973f780](https://github.com/h0x0er/newrelic-dotnet-agent/commit/973f780d868870e6e333a2e6874c6c7c108271a9))
+* deploy/linux/Dockerfile to reduce vulnerabilities ([#1384](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1384)) ([4ed084b](https://github.com/h0x0er/newrelic-dotnet-agent/commit/4ed084bc193e1eb5ae8907bd88cf0d73048221df))
+* don't throw when unable to get parent process path ([#1424](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1424)) ([3b1001f](https://github.com/h0x0er/newrelic-dotnet-agent/commit/3b1001f47a9f2fb57133a26d734c9175c5613e28))
+* Fix a memory leak when using StackExchange.Redis v2+. ([#1473](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1473)) ([#1504](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1504)) ([925d016](https://github.com/h0x0er/newrelic-dotnet-agent/commit/925d016c145b50b75a3b3401de303f5fa9a64609))
+* fix regression in NLog local decoration when logging objects as parameters ([#1480](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1480)) ([a19addd](https://github.com/h0x0er/newrelic-dotnet-agent/commit/a19addd512b834b62e334d81958c15fb00c29af3))
+* Retry connection on HttpRequestException error ([#1514](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1514)) ([#1484](https://github.com/h0x0er/newrelic-dotnet-agent/issues/1484)) ([99b520e](https://github.com/h0x0er/newrelic-dotnet-agent/commit/99b520e271df4357f8ea62cad2403884edb4d856))
+
 ## [10.9.1](https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.9.0...v10.9.1) (2023-04-10)
 
 ### Fixes
